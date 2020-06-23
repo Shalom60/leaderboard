@@ -175,10 +175,10 @@
         <span id="logo">[]</span> <span id="logoText">HNG LEADERBOARD</span>
     </header>
 
-    <form method="POST" action="login_Process.php">
+    <form method="POST" action="adminlogin_Process.php">
         <p>LOGIN</p>
 
-        <input type="text" name="email" placeholder="email" id="user">
+        <input type="text" name="name" placeholder="username" id="user">
         <br><br><br>
         <input type="password" name="password" placeholder="Password" id="pw">
         <br><br><br>

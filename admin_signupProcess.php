@@ -46,7 +46,7 @@ if ($password!= $password2){
 
 	for($counter=0; $counter< count($allAdmins); $counter++){
           $Admin = $allAdmins[$counter+2];
-          if($Admin == $email. ".json" ) {
+          if($Admin == $name. ".json" ) {
             
 			  $_SESSION['error'] = "Registration failed, admin already registered!";
 			  header('Location: adminsignup.php');
@@ -54,9 +54,9 @@ if ($password!= $password2){
 		  }
 
 	//saving the data into the database(folder) and redirecting to login page.
-	file_put_contents("db/admins/".$userObject['email'].".json", json_encode($userObject ));
+	file_put_contents("db/admins/".$userObject['username'].".json", json_encode($userObject ));
 	$_SESSION["message"] = "Registration successful, you can now login!";
-	header("Location: adminLogin.php");
+	header("Location: adminlogin.php");
 	
 }
 
