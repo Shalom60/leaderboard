@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up Page</title>
+    <title>Admin Sign up Page</title>
 
     <style>
 
@@ -45,27 +45,37 @@
             border-top: none;
             border-left: none;
             border-right: none;
-            margin-top: 30px;
+            margin-top: 10px;
             margin-left: 100px;
             background: transparent;
         }
-        #pw{
+        #email{
             border: 2px solid rgb(224, 219, 219);
             border-top: none;
             border-left: none;
             border-right: none;
-            margin-top: 30px;
+            margin-top: 10px;
+            margin-left: 100px;
+            background: transparent;
+        }
+        #pw1, #pw2{
+            border: 2px solid rgb(224, 219, 219);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-top: 10px;
             margin-left: 100px;
             background: transparent;
         }
 
+
         button{
             border: 1px solid #adbcbc;
-            border-radius: 1px;
+            border-radius: 5px;
             margin-top: 10px;
-            margin-left: 100px;
-            padding-left: 70px;
-            padding-right: 70px;
+            margin-left: 150px;
+            padding-left: 10px;
+            padding-right: 10px;
             border-radius: 50px;
             height: 5vh;
         }
@@ -109,7 +119,7 @@
             margin-left: -50px;
             background: transparent;
         }
-        #pw{
+        #email{
             /* border: 1px solid white;
             border-top: none;
             border-left: none;
@@ -153,14 +163,14 @@
             margin-left: -80px;
             background: transparent;
         }
-        
-        #pw{
+     
+        #pw1, #pw2{
             margin-left: -80px;
             background: transparent;
         }
 
         button{
-            margin-left: -80px; 
+            margin-left: -30px; 
         }
 
         }
@@ -175,14 +185,18 @@
         <span id="logo">[]</span> <span id="logoText">HNG LEADERBOARD</span>
     </header>
 
-    <form method="POST" action="adminlogin_Process.php">
-        <p>LOGIN</p>
+    <form method="POST" action="admin_signupProcess.php">
+        <p>ADD USER</p>
 
-        <input type="text" name="name" placeholder="username" id="user">
+        <input type="text" name="username" placeholder="Username" id="user">
         <br><br><br>
-        <input type="password" name="password" placeholder="Password" id="pw">
+        <input type="email" name="email" placeholder="Email Address" id="email">
         <br><br><br>
-        <button type="submit" >Login</button>
+        <input type="fullname" name="fullname" placeholder="fullname" id="pw1">
+        <br><br><br>
+        <input type="number" name="point" placeholder="point" id="pw2">
+        <br><br><br>
+        <button>Add</button>
     </form>
 
 </body>

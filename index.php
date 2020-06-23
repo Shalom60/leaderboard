@@ -52,6 +52,7 @@
                 
             }
 
+
 $point4 = 0;
 foreach ($data_json as $key1 => $value1) {
     if ($data_json[$key1]['Email'] != $email1 and $data_json[$key1]['Email'] != $email2 and  $data_json[$key1]['Email'] != $email3)  {
@@ -100,9 +101,9 @@ foreach ($data_json as $key1 => $value1) {
                 <i class="fa fa-align-justify"></i>
             </label>
             <ul>
-                <li><a href="#">Update Users</a></li>
+                <li><a href="create_users.php">Update Users</a></li>
                 <li><a href="#">Share</a></li>
-                <li><a href="#">New Administrator</a></li>
+                <li><a href="adminsignup.php">New Administrator</a></li>
             </ul>
             </th>
             <th>Full Name</th>
@@ -131,7 +132,7 @@ foreach ($data_json as $key1 => $value1) {
             echo '<td>'.$username3.'</td>';
             echo '<td>'.$email3.'</td>';
             echo '<td>'.$point3.'</td>';
-        echo '</tr>';
+        echo '</tr>
 
         echo '<tr style="background-color: grey;">';
         echo '<td>4</td>';
