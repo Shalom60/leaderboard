@@ -61,9 +61,9 @@
                 <i class="fa fa-align-justify"></i>
             </label>
             <ul>
-                <li><a href="#">Update Users</a></li>
+                <li><a href="create_users.php">Update Users</a></li>
                 <li><a href="#">Share</a></li>
-                <li><a href="#">New Administrator</a></li>
+                <li><a href="adminsignup.php">New Administrator</a></li>
             </ul>
             </th>
             <th>Full Name</th>
