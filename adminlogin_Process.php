@@ -5,7 +5,7 @@ $name = $_POST['name'] ;
 $password = $_POST['password'] ;
 
 
-
+$_SESSION['password'] = $password ;
 
 	$allAdmins = scandir("db/admins/");
   $adminCount = count($allAdmins);
