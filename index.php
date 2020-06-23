@@ -16,7 +16,7 @@
             $data_json = json_decode($json, true);
 
             // Find the first
-            $point1 = 2;
+            $point1 = 1;
             foreach ($data_json as $key1 => $value1) {
                 if($data_json[$key1]["Total Points"] > $point1){
                     $name1 = $data_json[$key1]['Full Name'];
