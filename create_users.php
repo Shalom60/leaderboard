@@ -1,17 +1,5 @@
-<?php session_start();
-
-
- if(!isset($_SESSION['password'])){
-	$_SESSION['error'] = "You are not authorised to view this page! ";
-	header('Location: adminlogin.php');
-	die();
-} ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -198,17 +186,17 @@
     </header>
 
     <form method="POST" action="admin_signupProcess.php">
-        <p>SIGN UP</p>
+        <p>ADD USER</p>
 
         <input type="text" name="username" placeholder="Username" id="user">
         <br><br><br>
         <input type="email" name="email" placeholder="Email Address" id="email">
         <br><br><br>
-        <input type="password" name="password" placeholder="Password" id="pw1">
+        <input type="fullname" name="fullname" placeholder="fullname" id="pw1">
         <br><br><br>
-        <input type="password" name="password2" placeholder="Retype Password" id="pw2">
+        <input type="number" name="point" placeholder="point" id="pw2">
         <br><br><br>
-        <button>Sign Up</button>
+        <button>Add</button>
     </form>
 
 </body>
